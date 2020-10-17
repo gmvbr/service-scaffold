@@ -1,4 +1,4 @@
-import 'core-js/es/reflect';
+import 'reflect-metadata';
 import Application from './server';
 
 function main() {
