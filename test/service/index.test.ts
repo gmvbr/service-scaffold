@@ -1,5 +1,4 @@
 import {describe, it} from 'mocha';
-import 'core-js/es7/reflect';
 
 import {expect} from 'chai';
 import Server from '../server';

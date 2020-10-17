@@ -1,5 +1,6 @@
+import 'core-js/es/reflect';
+
 import {describe, it} from 'mocha';
-import 'core-js/es7/reflect';
 
 import {expect} from 'chai';
 import {container} from 'tsyringe';

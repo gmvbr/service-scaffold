@@ -1,3 +1,5 @@
+import 'core-js/es/reflect';
+
 import server from '../src/server';
 import {before, after} from 'mocha';
 
