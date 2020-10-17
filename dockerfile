@@ -1,7 +1,8 @@
-FROM node:12:19.0
+FROM node:12
+
 WORKDIR /usr/src/app
 COPY package*.json ./
 COPY . .
 RUN npm install
-RUN npm run build
+RUN npm run compile
 RUN npm run start

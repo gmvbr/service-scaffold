@@ -5,7 +5,7 @@ import Channel from './singleton/channel';
 import Database from './singleton/database';
 
 async function IoC(fastify: FastifyInstance) {
-  container.registerInstance('FastifyInstance', fastify);
+  container.registerInstance<FastifyInstance>('FastifyInstance', fastify);
 
   const channel = container.resolve(Channel);
   const database = container.resolve(Database);

@@ -6,23 +6,7 @@ class Database {
   public client?: MongoClient;
   public db?: Db;
 
-  public verifyEnv() {
-    if (process.env.MONGO_URL === undefined) {
-      throw new Error('Require env MONGO_URL');
-    }
-    if (process.env.MONGO_USER === undefined) {
-      throw new Error('Require env MONGO_USER');
-    }
-    if (process.env.MONGO_PASSWORD === undefined) {
-      throw new Error('Require env MONGO_PASSWORD');
-    }
-    if (process.env.MONGO_DB === undefined) {
-      throw new Error('Require env MONGO_DB');
-    }
-  }
-
   public async initialize() {
-    this.verifyEnv();
     this.client = await MongoClient.connect(process.env.MONGO_URL!, {
       useNewUrlParser: true,
       useUnifiedTopology: true,
