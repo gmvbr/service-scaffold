@@ -22,7 +22,7 @@ class TodoModel {
   }
 
   status() {
-    return this.database.client?.isConnected();
+    return this.database.client!.isConnected();
   }
 }
 

@@ -10,7 +10,7 @@ class Channel {
   }
 
   public async close() {
-    this.conn?.close();
+    return this.conn!.close();
   }
 }
 

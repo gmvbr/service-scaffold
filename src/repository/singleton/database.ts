@@ -19,7 +19,7 @@ class Database {
   }
 
   public async close() {
-    this.client?.close();
+    return this.client!.close();
   }
 }
 

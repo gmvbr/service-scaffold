@@ -18,7 +18,6 @@ describe('test database', () => {
     await database.initialize();
     expect(database.client).to.not.be.null;
     expect(database.db).to.not.be.null;
-
     await database.close();
   });
 });
