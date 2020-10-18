@@ -1,8 +1,8 @@
 import {FastifyInstance} from 'fastify';
 import {container} from 'tsyringe';
 
-import Channel from './singleton/channel';
-import Database from './singleton/database';
+import Channel from '@singleton/channel';
+import Database from '@singleton/database';
 
 async function IoC(fastify: FastifyInstance) {
   container.registerInstance<FastifyInstance>('FastifyInstance', fastify);

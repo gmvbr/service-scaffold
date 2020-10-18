@@ -4,8 +4,8 @@ import {describe, it} from 'mocha';
 
 import {expect} from 'chai';
 import {container} from 'tsyringe';
-import TodoModel from '../../../src/repository/model/todo';
-import Database from '../../../src/repository/singleton/database';
+import TodoModel from '@model/todo';
+import Database from '@singleton/database';
 
 describe('test TodoModel', () => {
   process.env.MONGO_URL = 'mongodb://localhost:27017';

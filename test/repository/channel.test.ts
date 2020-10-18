@@ -4,7 +4,7 @@ import {describe, it} from 'mocha';
 
 import {expect} from 'chai';
 import {container} from 'tsyringe';
-import Channel from '../../src/repository/singleton/channel';
+import Channel from '@singleton/channel';
 
 describe('test channel', () => {
   const channel = container.resolve(Channel);

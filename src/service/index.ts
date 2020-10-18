@@ -1,7 +1,7 @@
 import {FastifyInstance} from 'fastify';
 import {autoInjectable, inject} from 'tsyringe';
 
-import TodoModel from '../repository/model/todo';
+import TodoModel from '@model/todo';
 
 @autoInjectable()
 class Service {
