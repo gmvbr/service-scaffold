@@ -1,41 +1,10 @@
 {
-  "ts-node": {
-    "compiler": "ttypescript"
-  },
   "extends": "../tsconfig.json",
   "compilerOptions": {
-    "baseUrl": "../",
-    "paths": {
-      "@repository/*": [
-        "src/repository/*"
-      ],
-      "@singleton/*": [
-        "src/repository/singleton/*"
-      ],
-      "@model/*": [
-        "src/repository/model/*"
-      ],
-      "@service/*": [
-        "src/service/*"
-      ],
-      "@app/*": [
-        "src/*"
-      ],
-      "@test/*": [
-        "test/*"
-      ]
-    },
-    "plugins": [
-      {
-        "transform": "typescript-transform-paths"
-      }
-    ]
+    "rootDir": "../",
   },
   "include": [
     "../src/**/*.ts",
     "../test/**/*.ts"
   ],
-  "exclude": [
-    "node_modules"
-  ]
 }

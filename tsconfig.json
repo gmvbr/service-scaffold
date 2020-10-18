@@ -1,41 +1,13 @@
 {
-  "ts-node": {
-    "compiler": "ttypescript"
-  },
   "extends": "./node_modules/gts/tsconfig-google.json",
   "compilerOptions": {
-    "baseUrl": ".",
+    "rootDir": "./src",
     "outDir": "build",
     "experimentalDecorators": true,
-    "emitDecoratorMetadata": true,
-    "paths": {
-      "@repository/*": [
-        "src/repository/*"
-      ],
-      "@singleton/*": [
-        "src/repository/singleton/*"
-      ],
-      "@model/*": [
-        "src/repository/model/*"
-      ],
-      "@service/*": [
-        "src/service/*"
-      ],
-      "@app/*": [
-        "src/*"
-      ],
-      "@test/*": [
-        "test/*"
-      ]
-    },
-    "plugins": [
-      {
-        "transform": "typescript-transform-paths"
-      }
-    ]
+    "emitDecoratorMetadata": true
   },
   "include": [
-    "src/**/*.ts",
+    "src/**/*.ts"
   ],
   "exclude": [
     "node_modules"

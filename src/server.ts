@@ -3,8 +3,8 @@ import Fastify, {FastifyInstance} from 'fastify';
 import FastifyHelmet from 'fastify-helmet';
 import FastifySensible from 'fastify-sensible';
 
-import Service from '@service/index';
-import IoC from '@repository/index';
+import Service from './service';
+import IoC from './repository';
 
 class Application {
   static fastify?: FastifyInstance;

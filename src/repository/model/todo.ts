@@ -1,7 +1,7 @@
 import {Collection} from 'mongodb';
 import {autoInjectable, singleton} from 'tsyringe';
 
-import Database from '@singleton/database';
+import Database from '../singleton/database';
 
 @singleton()
 @autoInjectable()

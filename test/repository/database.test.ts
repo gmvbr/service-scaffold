@@ -4,7 +4,7 @@ import {describe, it} from 'mocha';
 
 import {expect} from 'chai';
 import {container} from 'tsyringe';
-import Database from '@singleton/database';
+import Database from '../../src/repository/singleton/database';
 
 describe('test database', () => {
   const database = container.resolve(Database);
